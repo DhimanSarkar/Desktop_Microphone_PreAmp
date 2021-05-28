@@ -1,0 +1,380 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR?
+U 1 1 60B29090
+P 3825 2600
+AR Path="/60B29090" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B29090" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 3825 2450 50  0001 C CNN
+F 1 "+5V" H 3840 2773 50  0000 C CNN
+F 2 "" H 3825 2600 50  0001 C CNN
+F 3 "" H 3825 2600 50  0001 C CNN
+	1    3825 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60B29096
+P 3125 2575
+AR Path="/60B29096" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B29096" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 3125 2425 50  0001 C CNN
+F 1 "+5V" H 3140 2748 50  0000 C CNN
+F 2 "" H 3125 2575 50  0001 C CNN
+F 3 "" H 3125 2575 50  0001 C CNN
+	1    3125 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3975 2050 3975
+$Comp
+L power:GND #PWR?
+U 1 1 60B290A5
+P 5325 4500
+AR Path="/60B290A5" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290A5" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 5325 4250 50  0001 C CNN
+F 1 "GND" H 5330 4327 50  0000 C CNN
+F 2 "" H 5325 4500 50  0001 C CNN
+F 3 "" H 5325 4500 50  0001 C CNN
+	1    5325 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 4175 5325 4175
+Wire Wire Line
+	5325 3975 5450 3975
+Wire Wire Line
+	5325 4175 5325 3975
+Wire Wire Line
+	5325 4375 5375 4375
+Wire Wire Line
+	5325 4500 5325 4375
+Wire Wire Line
+	5325 4175 5375 4175
+Connection ~ 5325 4175
+Wire Wire Line
+	5325 4275 5325 4175
+Wire Wire Line
+	5375 4275 5325 4275
+$Comp
+L Connector:AudioPlug3 J?
+U 1 1 60B290B4
+P 5975 4275
+AR Path="/60B290B4" Ref="J?"  Part="1" 
+AR Path="/60B215B5/60B290B4" Ref="J201"  Part="1" 
+F 0 "J201" H 6025 4475 50  0000 R CNN
+F 1 "AudioPlug3" H 6150 4550 50  0000 R CNN
+F 2 "" H 6075 4225 50  0001 C CNN
+F 3 "~" H 6075 4225 50  0001 C CNN
+	1    5975 4275
+	-1   0    0    1   
+$EndComp
+Text GLabel 5450 3975 2    50   Output ~ 0
+Amplified_Output_to_PC_2
+Text GLabel 2050 3975 0    50   Input ~ 0
+Electret_Mic
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B290C2
+P 3975 4275
+AR Path="/60B290C2" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290C2" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 3975 4025 50  0001 C CNN
+F 1 "GNDREF" H 3980 4102 50  0000 C CNN
+F 2 "" H 3975 4275 50  0001 C CNN
+F 3 "" H 3975 4275 50  0001 C CNN
+	1    3975 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B290CE
+P 2550 4175
+AR Path="/60B290CE" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290CE" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 2550 3925 50  0001 C CNN
+F 1 "GNDREF" H 2555 4002 50  0000 C CNN
+F 2 "" H 2550 4175 50  0001 C CNN
+F 3 "" H 2550 4175 50  0001 C CNN
+	1    2550 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 60B290D4
+P 3225 2875
+AR Path="/60B290D4" Ref="U?"  Part="3" 
+AR Path="/60B215B5/60B290D4" Ref="U201"  Part="3" 
+F 0 "U201" H 3183 2921 50  0000 L CNN
+F 1 "TL072" H 3183 2830 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3225 2875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3225 2875 50  0001 C CNN
+	3    3225 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B290DA
+P 2400 3975
+AR Path="/60B290DA" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B290DA" Ref="R201"  Part="1" 
+F 0 "R201" V 2193 3975 50  0000 C CNN
+F 1 "1k" V 2284 3975 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2330 3975 50  0001 C CNN
+F 3 "~" H 2400 3975 50  0001 C CNN
+	1    2400 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B290E0
+P 3125 3175
+AR Path="/60B290E0" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290E0" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3125 2925 50  0001 C CNN
+F 1 "GND" H 3130 3002 50  0000 C CNN
+F 2 "" H 3125 3175 50  0001 C CNN
+F 3 "" H 3125 3175 50  0001 C CNN
+	1    3125 3175
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 3975
+$Comp
+L power:GND #PWR?
+U 1 1 60B290E7
+P 3825 3200
+AR Path="/60B290E7" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290E7" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 3825 2950 50  0001 C CNN
+F 1 "GND" H 3830 3027 50  0000 C CNN
+F 2 "" H 3825 3200 50  0001 C CNN
+F 3 "" H 3825 3200 50  0001 C CNN
+	1    3825 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3825 2900
+Wire Wire Line
+	3650 2900 3825 2900
+Wire Wire Line
+	3650 2950 3650 2900
+$Comp
+L power:GNDREF #PWR?
+U 1 1 60B290F0
+P 3650 2950
+AR Path="/60B290F0" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B290F0" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3650 2700 50  0001 C CNN
+F 1 "GNDREF" H 3655 2777 50  0000 C CNN
+F 2 "" H 3650 2950 50  0001 C CNN
+F 3 "" H 3650 2950 50  0001 C CNN
+	1    3650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4075 3450 4075
+$Comp
+L Amplifier_Operational:TL072 U?
+U 2 1 60B290F8
+P 4275 4175
+AR Path="/60B290F8" Ref="U?"  Part="2" 
+AR Path="/60B215B5/60B290F8" Ref="U201"  Part="2" 
+F 0 "U201" H 4275 3900 50  0000 C CNN
+F 1 "TL072" H 4275 3975 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4275 4175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4275 4175 50  0001 C CNN
+	2    4275 4175
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B290FE
+P 4875 4325
+AR Path="/60B290FE" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B290FE" Ref="R208"  Part="1" 
+F 0 "R208" H 4945 4371 50  0000 L CNN
+F 1 "10k" H 4945 4280 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4805 4325 50  0001 C CNN
+F 3 "~" H 4875 4325 50  0001 C CNN
+	1    4875 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B29104
+P 3825 4075
+AR Path="/60B29104" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B29104" Ref="R206"  Part="1" 
+F 0 "R206" V 3618 4075 50  0000 C CNN
+F 1 "1k" V 3709 4075 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 4075 50  0001 C CNN
+F 3 "~" H 3825 4075 50  0001 C CNN
+	1    3825 4075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4575 3725 4575 4175
+Connection ~ 3975 4075
+Wire Wire Line
+	4425 3725 4575 3725
+Wire Wire Line
+	3975 3725 3975 4075
+Wire Wire Line
+	4125 3725 3975 3725
+Wire Wire Line
+	3150 3575 3150 4075
+Wire Wire Line
+	2975 3575 3150 3575
+Wire Wire Line
+	2550 3575 2550 3975
+Wire Wire Line
+	2675 3575 2550 3575
+$Comp
+L Device:R R?
+U 1 1 60B2911A
+P 4275 3725
+AR Path="/60B2911A" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B2911A" Ref="R207"  Part="1" 
+F 0 "R207" V 4068 3725 50  0000 C CNN
+F 1 "1k" V 4159 3725 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4205 3725 50  0001 C CNN
+F 3 "~" H 4275 3725 50  0001 C CNN
+	1    4275 3725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B29120
+P 2825 3575
+AR Path="/60B29120" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B29120" Ref="R202"  Part="1" 
+F 0 "R202" V 2618 3575 50  0000 C CNN
+F 1 "R" V 2709 3575 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2755 3575 50  0001 C CNN
+F 3 "~" H 2825 3575 50  0001 C CNN
+	1    2825 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B29126
+P 3450 4225
+AR Path="/60B29126" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B29126" Ref="R203"  Part="1" 
+F 0 "R203" H 3520 4271 50  0000 L CNN
+F 1 "R" H 3520 4180 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3380 4225 50  0001 C CNN
+F 3 "~" H 3450 4225 50  0001 C CNN
+	1    3450 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B2912C
+P 3825 3050
+AR Path="/60B2912C" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B2912C" Ref="R205"  Part="1" 
+F 0 "R205" H 3895 3096 50  0000 L CNN
+F 1 "100k" H 3895 3005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 3050 50  0001 C CNN
+F 3 "~" H 3825 3050 50  0001 C CNN
+	1    3825 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B29132
+P 3825 2750
+AR Path="/60B29132" Ref="R?"  Part="1" 
+AR Path="/60B215B5/60B29132" Ref="R204"  Part="1" 
+F 0 "R204" H 3895 2796 50  0000 L CNN
+F 1 "100k" H 3895 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 2750 50  0001 C CNN
+F 3 "~" H 3825 2750 50  0001 C CNN
+	1    3825 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U?
+U 1 1 60B29138
+P 2850 4075
+AR Path="/60B29138" Ref="U?"  Part="1" 
+AR Path="/60B215B5/60B29138" Ref="U201"  Part="1" 
+F 0 "U201" H 2850 3800 50  0000 C CNN
+F 1 "TL072" H 2850 3875 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2850 4075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2850 4075 50  0001 C CNN
+	1    2850 4075
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B4F2FD
+P 4875 4475
+AR Path="/60B4F2FD" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B4F2FD" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 4875 4225 50  0001 C CNN
+F 1 "GND" H 4880 4302 50  0000 C CNN
+F 2 "" H 4875 4475 50  0001 C CNN
+F 3 "" H 4875 4475 50  0001 C CNN
+	1    4875 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B500C3
+P 3450 4375
+AR Path="/60B500C3" Ref="#PWR?"  Part="1" 
+AR Path="/60B215B5/60B500C3" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 3450 4125 50  0001 C CNN
+F 1 "GND" H 3455 4202 50  0000 C CNN
+F 2 "" H 3450 4375 50  0001 C CNN
+F 3 "" H 3450 4375 50  0001 C CNN
+	1    3450 4375
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 4075
+Connection ~ 3450 4075
+$Comp
+L Device:CP C?
+U 1 1 60B29110
+P 3300 4075
+AR Path="/60B29110" Ref="C?"  Part="1" 
+AR Path="/60B215B5/60B29110" Ref="C201"  Part="1" 
+F 0 "C201" V 3555 4075 50  0000 C CNN
+F 1 "220u" V 3464 4075 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm" H 3338 3925 50  0001 C CNN
+F 3 "~" H 3300 4075 50  0001 C CNN
+	1    3300 4075
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4575 4175
+Connection ~ 4875 4175
+$Comp
+L Device:CP C?
+U 1 1 60B2909C
+P 4725 4175
+AR Path="/60B2909C" Ref="C?"  Part="1" 
+AR Path="/60B215B5/60B2909C" Ref="C202"  Part="1" 
+F 0 "C202" V 4980 4175 50  0000 C CNN
+F 1 "220u" V 4889 4175 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm_P5.00mm" H 4763 4025 50  0001 C CNN
+F 3 "~" H 4725 4175 50  0001 C CNN
+	1    4725 4175
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
